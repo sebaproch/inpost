@@ -14,6 +14,11 @@ Feature: SearchFeature
     When  Załączenie dowolnego pliku jako CV
     Then Full page screenshot z wypełnionego formularza (bez wysyłania)
 
+  Scenario: Wyszukanie paczkomatów za pomocą API
+    Given Ustanowienie GET API endpoint
+    And Wysłałem zapytanie GET HTTTP
+    When Otrzymałem odpowiedź odnośnie paczkomatów
+    Then Upewniłem się że paczkomaty są z Krakowa
 
 
 
